@@ -2,22 +2,22 @@
 permalink:        pretty
 
 # Setup
-title:            '@ziishaned'
-tagline:          PHP and Javascript fanatic, open source lover and tinkerer.
-url:              http://zeeshanu.github.io
+title:            '@faisalahsan'
+tagline:          PHP, Javascript and Android fanatic, open source lover and tinkerer.
+url:              http://faisalahsan.github.io
 paginate:         1
 baseurl:          ""
 author:
-  name:           Zeeshan Ahmed
-  url:            http://zeeshanu.github.io
-  email:          ziishaned@gmail.com
-  github:         http://github.com/zeeshanu
-  description:    'I am Zeeshan Ahmed, a full stack web developer.'
+  name:           Faisal
+  url:            http://faisalahsan.github.io
+  email:          faisalahsan.se@gmail.com
+  github:         http://github.com/faisalahsan
+  description:    'I am Faisal Ahsan, a full stack web and Android developer.'
 
 # Custom vars
 version:          0.0.1
 github:
-  repo:           https://github.com/zeeshanu/zeeshanu.github.io
+  repo:           http://github.com/faisalahsan/faisalahsan.github.io
 
 # Menu
 pages_list:       
@@ -27,9 +27,9 @@ pages_list:
 
 # Stay in touch
 external_links:
-  github: 'http://github.com/zeeshanu'
-  mail: 'mailto:ziishaned@gmail.com'
-  linkedin: 'http://pk.linkedin.com/in/zeshanu'
+  github: 'http://github.com/faisalahsan'
+  mail: 'mailto:faisalahsan.se@gmail.com'
+  linkedin: 'https://www.linkedin.com/in/faysalahsan/'
 
 plugins:          [jekyll-paginate, rouge]
 paginate:         10
