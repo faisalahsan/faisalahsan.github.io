@@ -1,31 +1,36 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
-4
+---
+layout: default
+title: Home
+---
+
+{% include nav.html %}
+
+<div class="user-profile">
+    {% include user_profile.html %}
+</div>
+
+{% include search.html %}
+
+<div class="archive">
+    <ul class="posts">
+        {% for post in paginator.posts %}
+            <li class="article-list-item">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <span class="date">{{ post.date | date_to_string }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+	  	{% if paginator.previous_page %}
+	   	 	<a href="{{ paginator.previous_page_path }}" class="btn-prev pull-left">&larr; Previous</a>
+	  	{% endif %}
+	  	{% if paginator.next_page %}
+	    	<a href="{{ paginator.next_page_path }}" class="btn-nxt pull-right">Next &rarr;</a>
+	  	{% endif %}
+	  	<div class="clearfix"></div>
+	</div>
+    {% endif %}
+</div>
+
+{% include footer.html %}

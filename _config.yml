@@ -1,0 +1,37 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            '@ziishaned'
+tagline:          PHP and Javascript fanatic, open source lover and tinkerer.
+url:              http://zeeshanu.github.io
+paginate:         1
+baseurl:          ""
+author:
+  name:           Zeeshan Ahmed
+  url:            http://zeeshanu.github.io
+  email:          ziishaned@gmail.com
+  github:         http://github.com/zeeshanu
+  description:    'I am Zeeshan Ahmed, a full stack web developer.'
+
+# Custom vars
+version:          0.0.1
+github:
+  repo:           https://github.com/zeeshanu/zeeshanu.github.io
+
+# Menu
+pages_list:       
+  Archive: '/archive'
+  About: '/about'
+  Feed: '/atom.xml'
+
+# Stay in touch
+external_links:
+  github: 'http://github.com/zeeshanu'
+  mail: 'mailto:ziishaned@gmail.com'
+  linkedin: 'http://pk.linkedin.com/in/zeshanu'
+
+plugins:          [jekyll-paginate, rouge]
+paginate:         10
+paginate_path: "/blog/page:num"
+highlighter: rouge
